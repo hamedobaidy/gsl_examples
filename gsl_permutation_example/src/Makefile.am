@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_permutation_example third_order_permutation
+gsl_permutation_example_SOURCES=gsl_permutation_example.c
+
+gsl_permutation_example_LDADD=$(LIBS)
+
+third_order_permutation_SOURCES=third_order_permutation.c
+third_order_permutation_LDADD=$(LIBS)
