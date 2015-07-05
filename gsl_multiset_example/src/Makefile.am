@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_multiset_example
+gsl_multiset_example_SOURCES=gsl_multiset_example.c
+
+gsl_multiset_example_LDADD=$(LIBS)
