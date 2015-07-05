@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_eigensystems_example nonsymitric_eigensolver
+gsl_eigensystems_example_SOURCES=gsl_eigensystems_example.c
+
+gsl_eigensystems_example_LDADD=$(LIBS)
+
+nonsymitric_eigensolver_SOURCES=nonsymitric_eigensolver.c
+nonsymitric_eigensolver_LDADD=$(LIBS)
