@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_numeric_integration
+gsl_numeric_integrationt_SOURCES=gsl_numeric_integration.c
+
+gsl_numeric_integration_LDADD=$(LIBS)
