@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_blas_example
+gsl_blas_example_SOURCES=gsl_blas_example.c
+
+gsl_blas_example_LDADD=$(LIBS)
