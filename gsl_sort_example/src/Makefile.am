@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_sort_exampl
+gsl_sort_exampl_SOURCES=gsl_sort_example.c
+
+gsl_sort_exampl_LDADD=$(LIBS)
