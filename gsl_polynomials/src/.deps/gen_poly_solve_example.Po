@@ -1,5 +1,5 @@
-gsl_polynomials.o: gsl_polynomials.c /usr/include/stdc-predef.h \
- /usr/include/stdio.h /usr/include/features.h \
+gen_poly_solve_example.o: gen_poly_solve_example.c \
+ /usr/include/stdc-predef.h /usr/include/stdio.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -12,8 +12,8 @@ gsl_polynomials.o: gsl_polynomials.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/gsl/gsl_poly.h \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -28,11 +28,7 @@ gsl_polynomials.o: gsl_polynomials.c /usr/include/stdc-predef.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h /usr/include/gsl/gsl_errno.h \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
- /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/gsl/gsl_types.h /usr/include/gsl/gsl_poly.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/gsl/gsl_inline.h /usr/include/gsl/gsl_complex.h
 
 /usr/include/stdc-predef.h:
@@ -70,6 +66,8 @@ gsl_polynomials.o: gsl_polynomials.c /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/gsl/gsl_poly.h:
 
 /usr/include/stdlib.h:
 
@@ -110,24 +108,6 @@ gsl_polynomials.o: gsl_polynomials.c /usr/include/stdc-predef.h \
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
-
-/usr/include/gsl/gsl_errno.h:
-
-/usr/include/errno.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/x86_64-linux-gnu/asm/errno.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/gsl/gsl_types.h:
-
-/usr/include/gsl/gsl_poly.h:
 
 /usr/include/gsl/gsl_inline.h:
 

@@ -79,7 +79,8 @@ POST_UNINSTALL = :
 build_triplet = x86_64-unknown-linux-gnu
 host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
-bin_PROGRAMS = gsl_polynomials$(EXEEXT)
+bin_PROGRAMS = gsl_polynomials$(EXEEXT) \
+	gen_poly_solve_example$(EXEEXT)
 subdir = src
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp
@@ -92,6 +93,11 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
+am_gen_poly_solve_example_OBJECTS = gen_poly_solve_example.$(OBJEXT)
+gen_poly_solve_example_OBJECTS = $(am_gen_poly_solve_example_OBJECTS)
+gen_poly_solve_example_LDADD = $(LDADD)
+gen_poly_solve_example_LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+	$(gen_poly_solve_example_LDFLAGS) $(LDFLAGS) -o $@
 am_gsl_polynomials_OBJECTS = gsl_polynomials.$(OBJEXT)
 gsl_polynomials_OBJECTS = $(am_gsl_polynomials_OBJECTS)
 gsl_polynomials_LDADD = $(LDADD)
@@ -125,8 +131,9 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(gsl_polynomials_SOURCES)
-DIST_SOURCES = $(gsl_polynomials_SOURCES)
+SOURCES = $(gen_poly_solve_example_SOURCES) $(gsl_polynomials_SOURCES)
+DIST_SOURCES = $(gen_poly_solve_example_SOURCES) \
+	$(gsl_polynomials_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -250,6 +257,8 @@ top_builddir = ..
 top_srcdir = ..
 gsl_polynomials_SOURCES = gsl_polynomials.c
 gsl_polynomials_LDFLAGS = $(GSL_LIBS) -lgslcblas
+gen_poly_solve_example_SOURCES = gen_poly_solve_example.c
+gen_poly_solve_example_LDFLAGS = $(GSL_LIBS) -lgslcblas
 all: all-am
 
 .SUFFIXES:
@@ -327,6 +336,10 @@ uninstall-binPROGRAMS:
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
 
+gen_poly_solve_example$(EXEEXT): $(gen_poly_solve_example_OBJECTS) $(gen_poly_solve_example_DEPENDENCIES) $(EXTRA_gen_poly_solve_example_DEPENDENCIES) 
+	@rm -f gen_poly_solve_example$(EXEEXT)
+	$(AM_V_CCLD)$(gen_poly_solve_example_LINK) $(gen_poly_solve_example_OBJECTS) $(gen_poly_solve_example_LDADD) $(LIBS)
+
 gsl_polynomials$(EXEEXT): $(gsl_polynomials_OBJECTS) $(gsl_polynomials_DEPENDENCIES) $(EXTRA_gsl_polynomials_DEPENDENCIES) 
 	@rm -f gsl_polynomials$(EXEEXT)
 	$(AM_V_CCLD)$(gsl_polynomials_LINK) $(gsl_polynomials_OBJECTS) $(gsl_polynomials_LDADD) $(LIBS)
@@ -337,6 +350,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+include ./$(DEPDIR)/gen_poly_solve_example.Po
 include ./$(DEPDIR)/gsl_polynomials.Po
 
 .c.o:
