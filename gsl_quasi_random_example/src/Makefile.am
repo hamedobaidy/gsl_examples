@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_quasi_random_example
+gsl_quasi_random_example_SOURCES=gsl_quasi_random_example.c
+
+gsl_quasi_random_example_LDADD=$(LIBS)
