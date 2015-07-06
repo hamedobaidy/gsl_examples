@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_ntuple_example ntuple_analysis
+gsl_ntuple_example_SOURCES=gsl_ntuple_example.c
+
+gsl_ntuple_example_LDADD=$(LIBS)
+
+ntuple_analysis_SOURCES=ntuple_analysis.c
+ntuple_analysis_LDADD=$(LIBS)
