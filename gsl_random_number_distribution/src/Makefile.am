@@ -1,0 +1,10 @@
+bin_PROGRAMS=gsl_random_number_distribution random_walk_2d cumulative_distribution
+gsl_random_number_distribution_SOURCES=gsl_random_number_distribution.c
+
+gsl_random_number_distribution_LDADD=$(LIBS)
+
+random_walk_2d_SOURCES=random_walk_2d.c
+random_walk_2d_LDADD=$(LIBS)
+
+cumulative_distribution_SOURCES=cumulative_distribution.c
+cumulative_distribution_LDADD=$(LIBS)
