@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_numeric_differentiation
+gsl_numeric_differentiation_SOURCES=gsl_numeric_differentiation.c
+
+gsl_numeric_differentiation_LDADD=$(LIBS)
