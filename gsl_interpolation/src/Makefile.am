@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_interpolation periodic_cubic_spline
+gsl_interpolation_SOURCES=gsl_interpolation.c
+
+gsl_interpolation_LDADD=$(LIBS)
+
+periodic_cubic_spline_SOURCES=periodic_cubic_spline.c
+periodic_cubic_spline_LDADD=$(LIBS)
