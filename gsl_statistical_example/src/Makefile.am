@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_statistical_example sorted_data
+gsl_statistical_example_SOURCES=gsl_statistical_example.c
+
+gsl_statistical_example_LDADD=$(LIBS)
+
+sorted_data_SOURCES=sorted_data.c
+sorted_data_LDADD=$(LIBS)
