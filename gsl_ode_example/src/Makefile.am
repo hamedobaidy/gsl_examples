@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_ode_example
+gsl_ode_example_SOURCES=gsl_ode_example.c
+
+gsl_ode_example_LDADD=$(LIBS)
