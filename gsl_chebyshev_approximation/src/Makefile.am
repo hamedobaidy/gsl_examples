@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_chebyshev_approximation
+gsl_chebyshev_approximation_SOURCES=gsl_chebyshev_approximation.c
+
+gsl_chebyshev_approximation_LDADD=$(LIBS)
