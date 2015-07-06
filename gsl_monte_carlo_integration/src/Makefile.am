@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_monte_carlo_integration
+gsl_monte_carlo_integration_SOURCES=gsl_monte_carlo_integration.c
+
+gsl_monte_carlo_integration_LDADD=$(LIBS)
