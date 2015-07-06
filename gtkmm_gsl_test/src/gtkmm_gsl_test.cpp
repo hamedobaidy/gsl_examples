@@ -23,7 +23,9 @@ int main(int argc, char *argv[]) {
 	char res[100];
 	sprintf(res,"J0(%g) = %.18e\n", x, y);
 
-	std::string result(res);
+	std::ostringstream strs;
+	strs << "J0(" << x << ") = " << y;
+	std::string result = strs.str();
 
 	Gtk::Window window;
 	Gtk::Label label(result);
