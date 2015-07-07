@@ -1,0 +1,13 @@
+bin_PROGRAMS=gsl_least_square_fit gsl_quadratic_fit gen_output_data robust_least_squares
+gsl_least_square_fit_SOURCES=gsl_least_square_fit.c
+
+gsl_least_square_fit_LDADD=$(LIBS)
+
+gsl_quadratic_fit_SOURCES=gsl_quadratic_fit.c
+gsl_quadratic_fit_LDADD=$(LIBS)
+
+gen_output_data_SOURCES=gen_output_data.c
+gen_output_data_LDADD=$(LIBS)
+
+robust_least_squares_SOURCES=robust_least_squares.c
+robust_least_squares_LDADD=$(LIBS)
