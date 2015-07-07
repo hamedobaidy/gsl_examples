@@ -1,0 +1,20 @@
+bin_PROGRAMS=gsl_root_solver_brent gsl_root_solver_bisection gsl_root_solver_newton \
+				gsl_root_solver_secant gsl_root_solver_steffenson gsl_root_solver_falsepos
+gsl_root_solver_brent_SOURCES=gsl_root_solver_brent.c demo_fn.c
+
+gsl_root_solver_brent_LDADD=$(LIBS)
+
+gsl_root_solver_bisection_SOURCES=gsl_root_solver_bisection.c demo_fn.c
+gsl_root_solver_bisection_LDADD=$(LIBS)
+
+gsl_root_solver_newton_SOURCES=gsl_root_solver_newton.c demo_fn.c
+gsl_root_solver_newton_LDADD=$(LIBS)
+
+gsl_root_solver_secant_SOURCES=gsl_root_solver_secant.c demo_fn.c
+gsl_root_solver_secant_LDADD=$(LIBS)
+
+gsl_root_solver_steffenson_SOURCES=gsl_root_solver_steffenson.c demo_fn.c
+gsl_root_solver_steffenson_LDADD=$(LIBS)
+
+gsl_root_solver_falsepos_SOURCES=gsl_root_solver_falsepos.c demo_fn.c
+gsl_root_solver_falsepos_LDADD=$(LIBS)
