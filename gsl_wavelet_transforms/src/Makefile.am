@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_wavelet_transforms
+gsl_wavelet_transforms_SOURCES=gsl_wavelet_transforms.c
+
+gsl_wavelet_transforms_LDADD=$(LIBS)
