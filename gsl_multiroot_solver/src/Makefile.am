@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_multiroot_solver gsl_multiroot_solver_df
+gsl_multiroot_solver_SOURCES=gsl_multiroot_solver.c
+
+gsl_multiroot_solver_LDADD=$(LIBS)
+
+gsl_multiroot_solver_df_SOURCES=gsl_multiroot_solver_df.c
+gsl_multiroot_solver_df_LDADD=$(LIBS)
