@@ -1,0 +1,7 @@
+bin_PROGRAMS=gsl_multid_minimization gsl_nelder_mead
+gsl_multid_minimization_SOURCES=gsl_multid_minimization.c
+
+gsl_multid_minimization_LDADD=$(LIBS)
+
+gsl_nelder_mead_SOURCES=gsl_nelder_mead.c
+gsl_nelder_mead_LDADD=$(LIBS)
