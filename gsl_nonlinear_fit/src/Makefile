@@ -60,10 +60,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/gsl_multiset_example
-pkgincludedir = $(includedir)/gsl_multiset_example
-pkglibdir = $(libdir)/gsl_multiset_example
-pkglibexecdir = $(libexecdir)/gsl_multiset_example
+pkgdatadir = $(datadir)/gsl_nonlinear_fit
+pkgincludedir = $(includedir)/gsl_nonlinear_fit
+pkglibdir = $(libdir)/gsl_nonlinear_fit
+pkglibexecdir = $(libexecdir)/gsl_nonlinear_fit
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -79,7 +79,7 @@ POST_UNINSTALL = :
 build_triplet = x86_64-unknown-linux-gnu
 host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
-bin_PROGRAMS = gsl_multiset_example$(EXEEXT)
+bin_PROGRAMS = a.out$(EXEEXT)
 subdir = src
 DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/depcomp
@@ -92,10 +92,9 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
-am_gsl_multiset_example_OBJECTS = gsl_multiset_example.$(OBJEXT)
-gsl_multiset_example_OBJECTS = $(am_gsl_multiset_example_OBJECTS)
-am__DEPENDENCIES_1 =
-gsl_multiset_example_DEPENDENCIES = $(am__DEPENDENCIES_1)
+am_a_out_OBJECTS = gsl_nonlinear_fit.$(OBJEXT)
+a_out_OBJECTS = $(am_a_out_OBJECTS)
+a_out_LDADD = $(LDADD)
 AM_V_P = $(am__v_P_$(V))
 am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))
 am__v_P_0 = false
@@ -124,8 +123,8 @@ AM_V_CCLD = $(am__v_CCLD_$(V))
 am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(gsl_multiset_example_SOURCES)
-DIST_SOURCES = $(gsl_multiset_example_SOURCES)
+SOURCES = $(a_out_SOURCES)
+DIST_SOURCES = $(a_out_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -151,19 +150,19 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing autoconf
-AUTOHEADER = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing autoheader
-AUTOMAKE = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing automake-1.14
+AUTOCONF = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing autoconf
+AUTOHEADER = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing autoheader
+AUTOMAKE = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing automake-1.14
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CPPFLAGS = 
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"gsl_multiset_example\" -DPACKAGE_TARNAME=\"gsl_multiset_example\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"gsl_multiset_example\ 1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"gsl_multiset_example\" -DVERSION=\"1.0\" -DHAVE_LIBM=1 -DHAVE_LIBGSLCBLAS=1 -DHAVE_LIBGSL=1
+DEFS = -DPACKAGE_NAME=\"gsl_nonlinear_fit\" -DPACKAGE_TARNAME=\"gsl_nonlinear_fit\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"gsl_nonlinear_fit\ 1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"gsl_nonlinear_fit\" -DVERSION=\"1.0\"
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -176,16 +175,16 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lgsl -lgslcblas -lm 
+LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing makeinfo
+MAKEINFO = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
-PACKAGE = gsl_multiset_example
+PACKAGE = gsl_nonlinear_fit
 PACKAGE_BUGREPORT = 
-PACKAGE_NAME = gsl_multiset_example
-PACKAGE_STRING = gsl_multiset_example 1.0
-PACKAGE_TARNAME = gsl_multiset_example
+PACKAGE_NAME = gsl_nonlinear_fit
+PACKAGE_STRING = gsl_nonlinear_fit 1.0
+PACKAGE_TARNAME = gsl_nonlinear_fit
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0
 PATH_SEPARATOR = :
@@ -193,10 +192,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 1.0
-abs_builddir = /home/hamed/git/gsl_examples/gsl_multiset_example/src
-abs_srcdir = /home/hamed/git/gsl_examples/gsl_multiset_example/src
-abs_top_builddir = /home/hamed/git/gsl_examples/gsl_multiset_example
-abs_top_srcdir = /home/hamed/git/gsl_examples/gsl_multiset_example
+abs_builddir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/src
+abs_srcdir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/src
+abs_top_builddir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit
+abs_top_srcdir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -223,7 +222,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/install-sh
+install_sh = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -247,8 +246,7 @@ target_vendor = unknown
 top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
-gsl_multiset_example_SOURCES = gsl_multiset_example.c
-gsl_multiset_example_LDADD = $(LIBS)
+a_out_SOURCES = gsl_nonlinear_fit.c
 all: all-am
 
 .SUFFIXES:
@@ -326,9 +324,9 @@ uninstall-binPROGRAMS:
 clean-binPROGRAMS:
 	-test -z "$(bin_PROGRAMS)" || rm -f $(bin_PROGRAMS)
 
-gsl_multiset_example$(EXEEXT): $(gsl_multiset_example_OBJECTS) $(gsl_multiset_example_DEPENDENCIES) $(EXTRA_gsl_multiset_example_DEPENDENCIES) 
-	@rm -f gsl_multiset_example$(EXEEXT)
-	$(AM_V_CCLD)$(LINK) $(gsl_multiset_example_OBJECTS) $(gsl_multiset_example_LDADD) $(LIBS)
+a.out$(EXEEXT): $(a_out_OBJECTS) $(a_out_DEPENDENCIES) $(EXTRA_a_out_DEPENDENCIES) 
+	@rm -f a.out$(EXEEXT)
+	$(AM_V_CCLD)$(LINK) $(a_out_OBJECTS) $(a_out_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -336,7 +334,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/gsl_multiset_example.Po
+include ./$(DEPDIR)/gsl_nonlinear_fit.Po
 
 .c.o:
 	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

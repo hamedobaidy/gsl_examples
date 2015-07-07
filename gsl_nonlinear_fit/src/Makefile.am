@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_nonlinear_fit
+gsl_nonlinear_fit_SOURCES=gsl_nonlinear_fit.c
+
+gsl_nonlinear_fit_LDADD=$(LIBS)

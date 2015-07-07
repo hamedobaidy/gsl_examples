@@ -59,10 +59,10 @@ am__make_running_with_option = \
   test $$has_opt = yes
 am__make_dryrun = (target_option=n; $(am__make_running_with_option))
 am__make_keepgoing = (target_option=k; $(am__make_running_with_option))
-pkgdatadir = $(datadir)/gsl_multiset_example
-pkgincludedir = $(includedir)/gsl_multiset_example
-pkglibdir = $(libdir)/gsl_multiset_example
-pkglibexecdir = $(libexecdir)/gsl_multiset_example
+pkgdatadir = $(datadir)/gsl_nonlinear_fit
+pkgincludedir = $(includedir)/gsl_nonlinear_fit
+pkglibdir = $(libdir)/gsl_nonlinear_fit
+pkglibexecdir = $(libexecdir)/gsl_nonlinear_fit
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -82,7 +82,7 @@ subdir = .
 DIST_COMMON = INSTALL NEWS README AUTHORS ChangeLog \
 	$(srcdir)/Makefile.in $(srcdir)/Makefile.am \
 	$(top_srcdir)/configure $(am__configure_deps) COPYING compile \
-	config.guess config.sub depcomp install-sh missing
+	config.guess config.sub install-sh missing
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
@@ -190,19 +190,19 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing aclocal-1.14
+ACLOCAL = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing aclocal-1.14
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing autoconf
-AUTOHEADER = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing autoheader
-AUTOMAKE = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing automake-1.14
+AUTOCONF = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing autoconf
+AUTOHEADER = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing autoheader
+AUTOMAKE = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing automake-1.14
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
 CPPFLAGS = 
 CYGPATH_W = echo
-DEFS = -DPACKAGE_NAME=\"gsl_multiset_example\" -DPACKAGE_TARNAME=\"gsl_multiset_example\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"gsl_multiset_example\ 1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"gsl_multiset_example\" -DVERSION=\"1.0\" -DHAVE_LIBM=1 -DHAVE_LIBGSLCBLAS=1 -DHAVE_LIBGSL=1
+DEFS = -DPACKAGE_NAME=\"gsl_nonlinear_fit\" -DPACKAGE_TARNAME=\"gsl_nonlinear_fit\" -DPACKAGE_VERSION=\"1.0\" -DPACKAGE_STRING=\"gsl_nonlinear_fit\ 1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"gsl_nonlinear_fit\" -DVERSION=\"1.0\"
 DEPDIR = .deps
 ECHO_C = 
 ECHO_N = -n
@@ -215,16 +215,16 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LDFLAGS = 
 LIBOBJS = 
-LIBS = -lgsl -lgslcblas -lm 
+LIBS = 
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/missing makeinfo
+MAKEINFO = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 OBJEXT = o
-PACKAGE = gsl_multiset_example
+PACKAGE = gsl_nonlinear_fit
 PACKAGE_BUGREPORT = 
-PACKAGE_NAME = gsl_multiset_example
-PACKAGE_STRING = gsl_multiset_example 1.0
-PACKAGE_TARNAME = gsl_multiset_example
+PACKAGE_NAME = gsl_nonlinear_fit
+PACKAGE_STRING = gsl_nonlinear_fit 1.0
+PACKAGE_TARNAME = gsl_nonlinear_fit
 PACKAGE_URL = 
 PACKAGE_VERSION = 1.0
 PATH_SEPARATOR = :
@@ -232,10 +232,10 @@ SET_MAKE =
 SHELL = /bin/bash
 STRIP = 
 VERSION = 1.0
-abs_builddir = /home/hamed/git/gsl_examples/gsl_multiset_example
-abs_srcdir = /home/hamed/git/gsl_examples/gsl_multiset_example
-abs_top_builddir = /home/hamed/git/gsl_examples/gsl_multiset_example
-abs_top_srcdir = /home/hamed/git/gsl_examples/gsl_multiset_example
+abs_builddir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit
+abs_srcdir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit
+abs_top_builddir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit
+abs_top_srcdir = /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -262,7 +262,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/hamed/git/gsl_examples/gsl_multiset_example/install-sh
+install_sh = ${SHELL} /home/hamed/Documents/Mars/C++/workspace/gsl_nonlinear_fit/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
