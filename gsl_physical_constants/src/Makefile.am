@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_physical_constants
+gsl_physical_constants_SOURCES=gsl_physical_constants.c
+
+gsl_physical_constants_LDADD=$(LIBS)
