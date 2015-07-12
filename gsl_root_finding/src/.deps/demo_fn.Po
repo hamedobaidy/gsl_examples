@@ -1,5 +1,0 @@
-demo_fn.o: demo_fn.c /usr/include/stdc-predef.h demo_fn.h
-
-/usr/include/stdc-predef.h:
-
-demo_fn.h:
