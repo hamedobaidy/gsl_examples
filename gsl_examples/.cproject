@@ -40,7 +40,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="least_square_fit|interpolation|ieee_float|histogram_example|example|blas_example|chebyshev|fft_examples|function_minimization|eigensystems_example|combination_example|elem_funcs|bspline" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="linear_algebra|least_square_fit|interpolation|ieee_float|histogram_example|example|blas_example|chebyshev|fft_examples|function_minimization|eigensystems_example|combination_example|elem_funcs|bspline" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/blas_example"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/bspline"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/chebyshev"/>
@@ -54,6 +54,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/ieee_float"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/interpolation"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/least_square_fit"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/linear_algebra"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
