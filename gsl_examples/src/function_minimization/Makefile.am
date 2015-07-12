@@ -1,0 +1,4 @@
+bin_PROGRAMS=gsl_function_minimization
+gsl_function_minimization_SOURCES=gsl_function_minimization.c
+
+gsl_function_minimization_LDADD=$(LIBS)
