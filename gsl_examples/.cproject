@@ -40,7 +40,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="random_number_distribution|quasi_random_example|polynomials|physical_constants|permutation_example|ode_example|numeric_integration|numeric_differentiation|ntuple_example|nonlinear_fit|multiset_example|multiroot_solver|multid_minimization|monte_carlo_integration|matrix_to_file|matrix|LU_decomp|example|least_square_fit|chebyshev|function_minimization|linear_algebra|elem_funcs|bspline|histogram_example|blas_example|fft_examples|interpolation|eigensystems_example|combination_example|ieee_float" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+						<entry excluding="rng_example|random_number_distribution|quasi_random_example|polynomials|physical_constants|permutation_example|ode_example|numeric_integration|numeric_differentiation|ntuple_example|nonlinear_fit|multiset_example|multiroot_solver|multid_minimization|monte_carlo_integration|matrix_to_file|matrix|LU_decomp|example|least_square_fit|chebyshev|function_minimization|linear_algebra|elem_funcs|bspline|histogram_example|blas_example|fft_examples|interpolation|eigensystems_example|combination_example|ieee_float" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/LU_decomp"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/blas_example"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/bspline"/>
@@ -72,6 +72,7 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/polynomials"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/quasi_random_example"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/random_number_distribution"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src/rng_example"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
