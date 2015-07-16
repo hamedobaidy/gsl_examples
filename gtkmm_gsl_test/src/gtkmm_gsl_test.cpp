@@ -17,14 +17,19 @@ int main(int argc, char *argv[]) {
 	Glib::RefPtr<Gtk::Application> app = Gtk::Application::create(argc, argv,
 			"org.gtkmm.examples.base");
 
+	int n = 10;
 	double x = 5.0;
 	double y = gsl_sf_bessel_J0(x);
 	printf("J0(%g) = %.18e\n", x, y);
-	char res[100];
-	sprintf(res,"J0(%g) = %.18e\n", x, y);
+	double y1 = gsl_sf_bessel_J1(x);
+	printf("J1(%g) = %.18e\n", x, y1);
+	double yn = gsl_sf_bessel_Jn(n, x);
+	printf("Jn(%g) = %.18e\n", x, yn);
 
 	std::ostringstream strs;
-	strs << "J0(" << x << ") = " << y;
+	strs << "J0(" << x << ") = " << y << std::endl;
+	strs << "J1(" << x << ") = " << y1 << std::endl;
+	strs << "Jn(" << x << ") = " << yn << std::endl;
 	std::string result = strs.str();
 
 	Gtk::Window window;
