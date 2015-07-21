@@ -35,8 +35,10 @@ int main(int argc, char *argv[]) {
 	Gtk::Window window;
 	Gtk::Label label(result);
 	window.add(label);
-	window.set_default_size(200, 200);
+	window.set_default_size(300, 200);
 	window.set_border_width(25);
+	window.set_title("Gtkmm + GSL example");
+	window.set_position(Gtk::WIN_POS_CENTER);
 	window.show_all_children(true);
 
 	return app->run(window);
