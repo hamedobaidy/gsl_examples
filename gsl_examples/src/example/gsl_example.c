@@ -4,7 +4,7 @@
  Author      : Hamed Mohammadi
  Version     :
  Copyright   : GNU General Public License
- Description : Hello World in C, Ansi-style
+ Description : GNU Scientific Library - simple example
  ============================================================================
  */
 
