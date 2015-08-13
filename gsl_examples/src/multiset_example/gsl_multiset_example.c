@@ -3,8 +3,8 @@
  Name        : gsl_multiset_example.c
  Author      : Hamed
  Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Copyright   : GNU General Public License
+ Description : GNU Scientific Library - multiset example
  ============================================================================
  */
 
