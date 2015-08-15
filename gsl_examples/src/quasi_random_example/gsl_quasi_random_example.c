@@ -3,8 +3,8 @@
  Name        : gsl_quasi_random_example.c
  Author      : Hamed
  Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
+ Copyright   : GNU General Public License
+ Description : GNU Scientific Library - quasi random example
  ============================================================================
  */
 
